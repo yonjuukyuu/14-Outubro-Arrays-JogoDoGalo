@@ -24,23 +24,44 @@ public class Ex4JogoDoGalo {
 		int find = 0;
 
 		do{
-			int jogadorA = 1;
-			int jogadorB = 2;
 			
-			System.out.println(" ");
-			System.out.println(" ");
-			
-			System.out.println("Introduza a Linha");
-			int jogarALinha = jogador.nextInt();
-			
-			System.out.println("Introduza a Coluna");
-			int jogarAColuna = jogador.nextInt();
+			  	int jogadorA = 1;
+				int jogadorB = 2;
+		
+				System.out.println(" ");
+				System.out.println("Jogador A");
+				System.out.println(" ");
+				int validarPosiçao = 0;
+				
+				do	{
+					
+					System.out.println("Introduza a Linha");
+					int jogarALinha = jogador.nextInt();
+					
+					System.out.println("Introduza a Coluna");
+					int jogarAColuna = jogador.nextInt();
+					
+					
+					for(int i = 0;i < M; i++){
+						for(int j = 0; j < N; j++){
+						    // System.out.print( m[i][j]);
+							
+							if(m[jogarALinha][jogarAColuna] == jogadorA || m[jogarALinha][jogarAColuna] == jogadorB){
+								validarPosiçao = 0;
+								
+							}else
+								validarPosiçao = 1;
+						}
 						
+						
+					}
+					
+				}while(validarPosiçao != 1);
+				
 			
-		}while( find != 1 );
+			}while( find != 1 );
 		
 	}
 	
-	// Conclusão Da Matriz #COMMITED
 
 }
