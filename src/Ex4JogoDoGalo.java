@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Ex4JogoDoGalo {
 
@@ -7,6 +8,8 @@ public class Ex4JogoDoGalo {
 		int M = 3;
 		int N = 3;
 		m = new int [M][N];
+		Scanner jogador = new Scanner(System.in);
+
 		
 		System.out.println("Matriz do Jogo Do Galo");
 		
@@ -18,7 +21,29 @@ public class Ex4JogoDoGalo {
 			
 			
 		}
+		int find = 0;
+
+		do{
+			int jogadorA = 1;
+			int jogadorB = 2;
+			
+			System.out.println(" ");
+			System.out.println(" ");
+			
+			System.out.println("Introduza a Linha");
+			int jogarALinha = jogador.nextInt();
+			
+			System.out.println("Introduza a Coluna");
+			int jogarAColuna = jogador.nextInt();
+			
+			find +=2;
+			System.out.println(find);
+			
+			
+		}while( find == 10 );
+		
 	}
+	
 	// Conclusão Da Matriz #COMMITED
 
 }
