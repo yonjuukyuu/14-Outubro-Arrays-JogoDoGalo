@@ -35,12 +35,9 @@ public class Ex4JogoDoGalo {
 			
 			System.out.println("Introduza a Coluna");
 			int jogarAColuna = jogador.nextInt();
+						
 			
-			find +=2;
-			System.out.println(find);
-			
-			
-		}while( find == 10 );
+		}while( find != 1 );
 		
 	}
 	
