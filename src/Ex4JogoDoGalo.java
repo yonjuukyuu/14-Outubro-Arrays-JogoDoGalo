@@ -9,6 +9,7 @@ public class Ex4JogoDoGalo {
 		int N = 3;
 		m = new int [M][N];
 		Scanner jogador = new Scanner(System.in);
+		
 
 		
 		System.out.println("Matriz do Jogo Do Galo");
@@ -21,8 +22,9 @@ public class Ex4JogoDoGalo {
 			
 			
 		}
+		
 		int find = 0;
-
+		if (find!=1)
 		do{
 			
 			  	int jogadorA = 1;
@@ -31,7 +33,7 @@ public class Ex4JogoDoGalo {
 				
 				int validarPosiçao = 0;
 				int jogadorAJogar = jogadorA;
-				
+//jogador A--------------				
 				do	{
 					System.out.println(" ");
 					System.out.println("Jogador A");
@@ -43,8 +45,8 @@ public class Ex4JogoDoGalo {
 					int jogarAColuna = jogador.nextInt();
 					
 					
-					for(int i = 0;i < M; i++){
-						for(int j = 0; j < N; j++){
+					//for(int i = 0;i < M; i++){
+						//for(int j = 0; j < N; j++){
 						    // System.out.print( m[i][j]);
 							
 							if(m[jogarALinha][jogarAColuna] == jogadorA || m[jogarALinha][jogarAColuna] == jogadorB){
@@ -54,8 +56,8 @@ public class Ex4JogoDoGalo {
 								validarPosiçao = 1;
 								m[jogarALinha][jogarAColuna]  = jogadorA;
 								
-							}
-						}
+							//}
+					//	}
 						
 						
 					}
@@ -92,7 +94,7 @@ public class Ex4JogoDoGalo {
 					
 					
 					
-				}while(validarPosiçao != 1 && jogadorAJogar != jogadorA);
+				}while(validarPosiçao != 1);// && jogadorAJogar != jogadorA);
 				
 				System.out.println("Matriz do Jogo Do Galo");
 				
@@ -104,10 +106,13 @@ public class Ex4JogoDoGalo {
 					
 					
 				}
+System.out.println("AAAA"+find);
 				
+//jogador B--------------				
 				jogadorAJogar = jogadorB;
 				validarPosiçao = 0;
 				
+				if (find!=1)
 				do	{
 					System.out.println(" ");
 					System.out.println("Jogador B");
@@ -119,8 +124,8 @@ public class Ex4JogoDoGalo {
 					int jogarBColuna = jogador.nextInt();
 					
 					
-					for(int i = 0;i < M; i++){
-						for(int j = 0; j < N; j++){
+					//for(int i = 0;i < M; i++){
+					//	for(int j = 0; j < N; j++){
 						    // System.out.print( m[i][j]);
 							
 							if(m[jogarBLinha][jogarBColuna] == jogadorA || m[jogarBLinha][jogarBColuna] == jogadorB){
@@ -130,11 +135,12 @@ public class Ex4JogoDoGalo {
 								validarPosiçao = 1;
 								m[jogarBLinha][jogarBColuna]  = jogadorB;
 								
-							}
-						}
+						//	}
+					//	}
 						
 						
 					}
+							
 					if(m[0][0] == jogadorB && m[0][1] == jogadorB && m[0][2] == jogadorB ){
 						find = 1;
 						jogadorVencedor = jogadorB;
@@ -164,7 +170,10 @@ public class Ex4JogoDoGalo {
 						jogadorVencedor = jogadorB;
 					}
 					
-				}while(validarPosiçao != 1 && jogadorAJogar != jogadorB);
+				}while(validarPosiçao != 1);// && jogadorAJogar == jogadorB);
+				jogadorAJogar = jogadorA;
+
+				
 				
 				System.out.println("Matriz do Jogo Do Galo");
 				
@@ -174,13 +183,15 @@ public class Ex4JogoDoGalo {
 					for(int j = 0; j < N; j++){
 						System.out.print( m[i][j]);
 					}
+
+System.out.println("BBBB"+find);
 					
 					
 				}
 			
 			}while( find != 1 );
 		
-		System.out.println("Jogo Do Galo END");
+		System.out.println("Jogo Do Galo END " );
 
 	}
 	
