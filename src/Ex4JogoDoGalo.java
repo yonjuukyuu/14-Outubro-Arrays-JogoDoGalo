@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+// Daniel Silva issue tracking
 public class Ex4JogoDoGalo {
 
 	public static void main(String[] args) {
