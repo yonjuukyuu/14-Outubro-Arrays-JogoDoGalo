@@ -106,7 +106,7 @@ public class Ex4JogoDoGalo {
 					
 					
 				}
-System.out.println("AAAA"+find);
+// System.out.println("AAAA"+find);
 				
 //jogador B--------------				
 				jogadorAJogar = jogadorB;
@@ -184,7 +184,7 @@ System.out.println("AAAA"+find);
 						System.out.print( m[i][j]);
 					}
 
-System.out.println("BBBB"+find);
+// System.out.println("BBBB"+find);
 					
 					
 				}
