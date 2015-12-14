@@ -1,2 +1,2 @@
-# 14-Outubro-Arrays-JogoDoGalo
-jbbjb
+# JogoDoGalo
+READ WIKI
